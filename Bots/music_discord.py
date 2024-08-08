@@ -14,10 +14,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author == client.user:
-        return
+    if massage.content.startwith('!entrar'):
+        try:
+            pass 
 
-    if message.content.startswith('Olá'):
-        await message.channel.send('Olá, como vai?!')
 
 client.run(key) 
+#https://discordpy.readthedocs.io/en/stable/api.html?highlight=message%20author#discord.Message.author
